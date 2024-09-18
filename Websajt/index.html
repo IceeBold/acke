@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acke Portfolio</title>
+    <!-- Google Fonts: Montserrat Bold -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode">
+    <header>
+        <nav class="navbar">
+            <!-- Modify logo text here -->
+            <a href="#home" class="logo">Acke/Iceflow Studios</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#assets">Assets</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mode-toggle-container">
+                <label class="switch">
+                    <input type="checkbox" id="mode-toggle">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </nav>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <!-- Modify main heading and subtitle -->
+                <h1 class="hero-title">Welcome to My Portfolio</h1>
+                <p class="hero-subtitle">Showcasing my expertise in scripting, GFX , and Game Design.</p>
+            </div>
+        </section>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about" class="section about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <!-- Modify profile image and about text here -->
+            <img src="pfp.png" alt="Profile Image" class="profile-img">
+            <p>Hi, I'm Acke, a Roblox developer with extensive experience in creating engaging games. Most of my projects remain unfinished, but I learned valuable lessons from each of them.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section portfolio">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <!-- Modify project details and images here -->
+            <div class="project">
+                <img src="Project.jpg" alt="Project 1 Image">
+                <div class="project-info">
+                    <h3>Donation Map</h3>
+                    <p>Unfinished!!!</p>
+                    <a href="https://roblox.com/project" class="play-btn" target="_blank">Play Now</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="GamePng.png" alt="Project 2 Image">
+                <div class="project-info">
+                    <h3>Quiet Front</h3>
+                    <p>Inspired by my great grandfather. Still in early alpha with bugs.</p>
+                    <a href="https://www.roblox.com/games/17225654008/Quiet-Front-Early-Alpha" class="play-btn" target="_blank">Play Now</a>
+                </div>
+            </div>
+        </div>
+        <section id="skills" class="section skills">
+            <h2>My Skills</h2>  
+            
+                <div class="skill-content">
+                <img src="Assets1.png" alt="Project 3 Image">
+                <div class="project-info">
+                    <h3>Building Assets 2</h3>
+                    <p> Shooting Range.</p>
+                </div>
+            </div>
+        </div>
+        <div class="skill-content">
+            <img src="Assset.png" alt="Project 3 Image">
+            <div class="project-info">
+                <h3>Building Assets 2</h3>
+                <p>Police Building.</p>
+            </div>
+        </div>
+    </div>
+    <div class="skill-content">
+        <img src="Assets2.png" alt="Project 3 Image">
+        <div class="project-info">
+            <h3>Building Assets 2</h3>
+            <p>Low poly building.</p>
+        </div>
+    </div>
+    <h3>GFX</h3>
+    </div>
+            </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <h2>My Skills</h2>
+        <div class="skills-buttons">
+            <button onclick="showSkill('gfx')">GFX</button>
+            <button onclick="showSkill('scripting')">Scripting</button>
+            <button onclick="showSkill('leveldesign')">Level Design</button>
+        </div>
+        <div id="skill-content" class="skill-content"></div>
+            <!-- Slider -->
+        <!-- Slider controls -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    </section>
+
+    <!-- Assets Store Section -->
+    <section id="assets" class="section assets">
+        <h2>Assets Store</h2>
+        <ul class="assets-list">
+            <li>
+                <h3>Low poly asset pack</h3>
+                <p>Download this free pack of assets for your Roblox game.</p>
+                <!-- Modify download link -->
+                <a href="Assets/asset-pack1.zip" download class="download-btn">Download Asset Pack 1</a>
+            </li>
+            <li>
+                <h3>Warehouse props</h3>
+                <p>Premium asset pack with exclusive content.</p>
+                <a href="Assets/asset-pack2.zip" download class="download-btn">Download Asset Pack 2</a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section testimonials">
+        <h2>Reviews</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial">
+                <p>"Acke helped us develop an amazing Roblox game with advanced scripting and great visuals!"</p>
+                <span>- Flasevor</span>
+            </div>
+            <!-- Add more testimonials as needed -->
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="section contact">
+        <h2>Contact Me</h2>
+        <form action="submit_form.php" method="POST" class="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+
+        <h3>Socials</h3>
+        <a href="https://www.youtube.com/@AckeDev" class="play-btn" target="_blank">Youtube</a>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Acke - Professional Roblox Developer</p>
+        <p>All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
